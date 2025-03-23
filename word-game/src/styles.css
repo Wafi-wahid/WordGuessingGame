@@ -1,0 +1,109 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4e81d2, #556270);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+h1 {
+  font-size: 28px;
+  background: -webkit-linear-gradient(45deg, #1518d0, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Difficulty buttons */
+.difficulty-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hero {
+  background-color: #ff9f43;
+  color: white;
+}
+
+.master {
+  background-color: #1dd1a1;
+  color: white;
+}
+
+.legend {
+  background-color: #ee5253;
+  color: white;
+}
+
+.difficulty-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Game elements */
+.letters {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #feca57;
+}
+
+.hint {
+  font-size: 18px;
+  font-style: italic;
+  color: #f368e0;
+}
+
+/* Input field */
+.word-input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  margin: 10px 0;
+  width: 80%;
+}
+
+/* Submit button */
+.submit-btn {
+  background: #ff4757;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #2d18e8;
+}
+
+/* Score */
+.score {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Timer */
+p strong {
+  color: #25ccf7;
+}
