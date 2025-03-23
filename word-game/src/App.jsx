@@ -31,6 +31,7 @@ export default function WordGame() {
   const [message, setMessage] = useState("");
   const [hint, setHint] = useState("");
   const [time, setTime] = useState(30);
+  const [showHint, setShowHint] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -97,7 +98,10 @@ export default function WordGame() {
       <div className="letters">
         🔡 Arrange these letters: <strong>{letters.join(" ")}</strong>
       </div>
-      <p className="hint">💡 Hint: {hint}</p>
+      <button className="hint-button" onClick={() => setShowHint(!showHint)}>
+        💡 See Hint
+      </button>
+      {showHint && <p className="hint-text">{hint}</p>}
       <input
         type="text"
         className="word-input"

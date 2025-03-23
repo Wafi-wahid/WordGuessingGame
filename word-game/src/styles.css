@@ -16,6 +16,12 @@ body {
   border-radius: 10px;
   background: linear-gradient(135deg, #4e81d2, #556270);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  /* Centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Title */
@@ -63,10 +69,30 @@ h1 {
   color: #feca57;
 }
 
-.hint {
-  font-size: 18px;
-  font-style: italic;
-  color: #f368e0;
+/* Hint button */
+.hint-button {
+  position: relative;
+  background-color: #2e86de;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hint-button:hover .hint-text {
+  display: block;
+}
+
+.hint-text {
+  background-color: #333;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 /* Input field */
