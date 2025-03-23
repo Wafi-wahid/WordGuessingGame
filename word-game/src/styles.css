@@ -16,8 +16,6 @@ body {
   border-radius: 10px;
   background: linear-gradient(135deg, #4e81d2, #556270);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-  /* Centering */
   position: absolute;
   top: 50%;
   left: 50%;
